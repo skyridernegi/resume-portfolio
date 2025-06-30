@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonu Kumar - Resume Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        scroll-behavior: smooth;
+        background-color: #f8f9fa;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+      section {
+        padding: 80px 0;
+        animation: fadeIn 1.2s ease-in-out;
+      }
+      .section-heading {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+        text-align: center;
+        animation: slideDown 1s ease-out;
+      }
+      .hero {
+        background: linear-gradient(135deg, #0d6efd, #6f42c1);
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+        animation: fadeInHero 1.5s ease-in-out;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .hero p {
+        font-size: 1.2rem;
+      }
+      .counter {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #ffc107;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .icon-list i {
+        color: #0d6efd;
+        margin-right: 10px;
+      }
+      .pulse-icon {
+        animation: pulse 2s infinite;
+      }
+      .list-group-item:hover {
+        background-color: #88e677;
+        transform: scale(1.01);
+        transition: all 0.3s ease-in-out;
+      }
+      footer {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        animation: fadeIn 2s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInHero {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          color: #0d6efd;
+        }
+        50% {
+          transform: scale(1.2);
+          color: #6610f2;
+        }
+        100% {
+          transform: scale(1);
+          color: #0d6efd;
+        }
+      }
+      .hover-shadow:hover {
+        transform: scale(1.03);
+        /* transition: all 0.3s ease-in-out; */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Sonu Kumar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#introduction">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#qualification">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certifications">Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#achievements">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#companies">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="container">
+        <h1>Sonu Kumar</h1>
+        <p>
+          Lead Consultant | Associate Technical Architect | 11.7+ Years in
+          Software Engineering
+        </p>
+        <div class="row text-center mt-4">
+          <div class="col-md-4">
+            <div class="counter" data-target="11">0</div>
+            <p>Years Experience</p>
+          </div>
+          <div class="col-md-4">
+            <div class="counter" data-target="25">0</div>
+            <p>Projects Delivered</p>
+          </div>
+          <div class="col-md-4">
+            <div class="counter" data-target="4">0</div>
+            <p>Companies Worked</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+      <section id="introduction">
+        <h2 class="section-heading">Introduction</h2>
+        <p class="text-center">
+          I'm a software architect with expertise in JSE/JEE, microservices, and
+          cloud infrastructure. I deliver scalable backend solutions and
+          specialize in GIS, PL/SQL, and cloud deployments. Currently open to
+          remote opportunities.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2 class="section-heading">Technical Skillset</h2>
+        <div class="row icon-list">
+          <div class="col-md-6">
+            <p>
+              <i class="bi bi-check-circle-fill"></i> Java (5–11), Core Java,
+              Multithreading, Collections
+            </p>
+            <p>
+              <i class="bi bi-check-circle-fill"></i> Spring Boot, Spring MVC,
+              REST, Struts 2
+            </p>
+            <p>
+              <i class="bi bi-check-circle-fill"></i> Shell Scripting, PL/SQL,
+              System Design
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              <i class="bi bi-check-circle-fill"></i> Databases: MySQL,
+              PostgreSQL, Oracle, MSSQL
+            </p>
+            <p>
+              <i class="bi bi-check-circle-fill"></i> AWS, Azure, Jenkins,
+              Tomcat
+            </p>
+            <p>
+              <i class="bi bi-check-circle-fill"></i> GeoServer, OL3, Leaflet,
+              PostGIS
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-heading">Projects Done</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card hover-shadow border-start border-primary border-3">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="bi bi-box me-2"></i>Catalog Service
+                </h5>
+                <p class="card-text">
+                  Microservice for product catalog using Spring Boot & GraphQL.
+                  Designed to support high scalability and flexible querying for
+                  e-commerce platforms.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card hover-shadow border-start border-warning border-3">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="bi bi-controller me-2"></i>MLB-BTS Migration
+                </h5>
+                <p class="card-text">
+                  Fantasy sports game backend migrated from Oracle to PostgreSQL
+                  using microservice architecture, ensuring data integrity and
+                  performance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card hover-shadow border-start border-success border-3">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="bi bi-droplet-half me-2"></i>Meter Ops
+                </h5>
+                <p class="card-text">
+                  Role-based water meter data portal for US Government.
+                  Technologies used: JEE, PostgreSQL, Spring Security, ChartJS.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card hover-shadow border-start border-danger border-3">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="bi bi-cloud-sun-fill me-2"></i>Mahavedh Platform
+                </h5>
+                <p class="card-text">
+                  Government of Maharashtra's weather portal using RESTful APIs
+                  and PostGIS for interpolation and visualization of climate
+                  data.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card hover-shadow border-start border-info border-3">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="bi bi-globe-asia-australia me-2"></i>Flare Detection
+                </h5>
+                <p class="card-text">
+                  Geospatial OL3-based mapping for identifying flares using
+                  PostgreSQL and shell scripting with automated alerts and
+                  reports.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div
+              class="card hover-shadow border-start border-secondary border-3"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="bi bi-map-fill me-2"></i>Agri Data Visualization
+                </h5>
+                <p class="card-text">
+                  Developed GIS visual analytics for agriculture and rainfall
+                  pattern comparison using LeafletJS and PostGIS.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="qualification">
+        <h2 class="section-heading">Education</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card shadow-sm border-primary mb-3">
+              <div class="card-header bg-primary text-white">
+                <strong>Master of Computer Applications (MCA)</strong>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Specialized in Software Engineering and Cloud Architecture.
+                  Strong academic performance with Java and DB projects.
+                </p>
+              </div>
+            </div>
+            <div class="card shadow-sm border-info">
+              <div class="card-header bg-info text-white">
+                <strong>Bachelor of Computer Applications (BCA)</strong>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Focused on object-oriented design, Java, and algorithmic
+                  problem solving. Completed mini-projects using MySQL.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications">
+        <h2 class="section-heading">Certifications</h2>
+        <ul class="list-group">
+          <li class="list-group-item">
+            Sun Microsystems Certified Java Programmer (SCJP)
+          </li>
+          <li class="list-group-item">AWS Certified Solutions Architect</li>
+        </ul>
+      </section>
+
+      <section id="achievements">
+        <h2 class="section-heading">Achievements / Awards</h2>
+        <ul class="list-group">
+          <li class="list-group-item">
+            Best Employee for Agri & Weather data project for Maharashtra &
+            Gujarat Govt – 100% accuracy in interpolated data generation.
+          </li>
+          <li class="list-group-item">
+            Completed BTS game migration within 2-month tight deadline.
+          </li>
+        </ul>
+      </section>
+
+      <section id="companies">
+        <h2 class="section-heading">Professional Experience</h2>
+        <ul class="list-group">
+          <li class="list-group-item">
+            TAVANT India – Associate Technical Architect (Dec 2020 – Aug 2023)
+          </li>
+          <li class="list-group-item">
+            TSPI Noida – Sr Technical Consultant (Jun 2019 – Nov 2020)
+          </li>
+          <li class="list-group-item">
+            Denave India – Sr Software Engineer (Aug 2018 – Mar 2019)
+          </li>
+          <li class="list-group-item">
+            Skymet Weather – Project Lead / Developer (2012 – 2018)
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-heading">Contact Me</h2>
+        <div class="text-center">
+          <p>
+            <i class="bi bi-envelope pulse-icon"></i>
+            <a href="mailto:sonunegi_negi@yahoo.com">sonunegi_negi@yahoo.com</a>
+          </p>
+          <p>
+            <i class="bi bi-telephone pulse-icon"></i> +91 8178556036 / +91
+            9310470648
+          </p>
+          <p>
+            <i class="bi bi-house pulse-icon"></i> Available for remote
+            opportunities only (Immediate Joiner)
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Sonu Kumar. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const counters = document.querySelectorAll(".counter");
+      counters.forEach((counter) => {
+        let start = 0;
+        const end = +counter.getAttribute("data-target");
+        const increment = end / 100;
+        const update = () => {
+          start += increment;
+          if (start < end) {
+            counter.textContent = Math.round(start);
+            requestAnimationFrame(update);
+          } else {
+            counter.textContent = end;
+          }
+        };
+        update();
+      });
+    </script>
+  </body>
+</html>
